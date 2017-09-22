@@ -39,6 +39,8 @@ Or
 curl -L https://raw.githubusercontent.com/miya0001/wpdev/master/run.sh | bash -s <tag> [container-name]
 ```
 
+## The list of available tags
+
 | Tag | PHP Version | PHPUnit Version |
 |-----|-------------|-----------------|
 | 5.2 | 5.2.17      | 3.6             |
