@@ -24,4 +24,4 @@ docker exec $CONTAINER_NAME ln -s /var/run/mysqld/mysqld.sock /tmp/mysql.sock ||
 docker exec $CONTAINER_NAME mysql -u root -e "CREATE DATABASE wordpress_tests;" -p1111
 docker exec $CONTAINER_NAME mysql -u root -e 'GRANT ALL PRIVILEGES ON wp_cli_test.* TO "wp_cli_test"@"localhost" IDENTIFIED BY "password1";' -p1111
 
-echo "Run: docker exec -it -u ubuntu $CONTAINER_NAME bash"
+echo "Run: docker exec -it $CONTAINER_NAME bash"
