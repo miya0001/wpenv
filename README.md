@@ -1,4 +1,4 @@
-# wpdev
+# wpenv
 
 A Docker based testing environment for WordPress.
 
@@ -6,34 +6,17 @@ A Docker based testing environment for WordPress.
 
 * Docker
 
-### What's installed
-
-* PHP 5.2 - 7.1
-* PHPUnit
-* MySQL
-
-It doesn't install Apache or Nginx, so it is a testing environment.
-
-### MySQL
-
-* Database: wordpress_tests
-  * User: `root`
-  * Password: `1111`
-* Database: wp_cli_test
-  * User: `wp_cli_test`
-  * Password: `password1`
-
-### Shared directory
-
-The current directory will be mounted on the container.
-
 ## Usage
 
 ```
-curl -L https://raw.githubusercontent.com/miya0001/wpenv/master/run.sh | bash -s <tag>[wp_version] [container-name]
+curl -L https://raw.githubusercontent.com/miya0001/wpenv/master/run.sh | bash -s <tag> [wp_version] [container-name]
 ```
 
-### How to run PHPUnit for WordPress plugin
+See:
+* https://github.com/miya0001/wpenv/blob/master/README.md#the-list-of-available-tags
+* https://codex.wordpress.org/WordPress_Versions
+
+### How to run phpunit for WordPress plugin
 
 Create a plugin and change directory into the plugin.
 
@@ -55,7 +38,7 @@ Run `phpunit`.
 $ phpunit
 ```
 
-### How to run Behat for WP-CLI
+### How to run behat for WP-CLI
 
 Change directory into the package commmand directory.
 
