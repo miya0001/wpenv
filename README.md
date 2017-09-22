@@ -4,7 +4,7 @@ A Docker based testing environment for WordPress.
 
 ## Requires
 
-* Docker
+* Docker 17.06 or later
 
 ## Usage
 
@@ -25,7 +25,7 @@ $ wp scaffold plugin my-plugin
 $ cd wp-content/plugins/my-plugin
 ```
 
-Run a docker container in the directory and exec into the container.
+Run a docker in the directory and exec into the container.
 
 ```
 $ curl -L https://raw.githubusercontent.com/miya0001/wpenv/master/run.sh | bash -s 7.1 4.8
@@ -46,7 +46,7 @@ Change directory into the package commmand directory.
 $ cd path/to/core-command
 ```
 
-Run a docker container in the directory and exec into the container.
+Run a docker in the directory and exec into the container.
 
 ```
 $ curl -L https://raw.githubusercontent.com/miya0001/wpenv/master/run.sh | bash -s 7.1
