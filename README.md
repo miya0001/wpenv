@@ -6,7 +6,7 @@ A Docker based testing environment for WordPress.
 
 * Docker
 
-## What's installed
+### What's installed
 
 * PHP 5.2 - 7.1
 * PHPUnit
@@ -14,7 +14,7 @@ A Docker based testing environment for WordPress.
 
 It doesn't install Apache or Nginx, so it is a testing environment.
 
-## MySQL
+### MySQL
 
 * Database: wordpress_tests
   * User: `root`
@@ -23,7 +23,7 @@ It doesn't install Apache or Nginx, so it is a testing environment.
   * User: `wp_cli_test`
   * Password: `password1`
 
-## Shared directory
+### Shared directory
 
 The current directory will be mounted on `/shared` on container.
 
@@ -50,3 +50,6 @@ curl -L https://raw.githubusercontent.com/miya0001/wpdev/master/run.sh | bash -s
 | 5.6 | 5.6.31      | 5.7.21          |
 | 7.0 | 7.0.23      | 6.3.0           |
 | 7.1 | 7.1.9       | 6.3.0           |
+
+See also:
+https://github.com/miya0001/docker-phpenv
