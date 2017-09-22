@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 if [ $# -lt 1 ]; then
-    echo "usage: $0 <php-version> [containername]"
+    echo "usage: $0 <tag> [containername]"
     exit 1
 fi
 

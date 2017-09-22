@@ -30,11 +30,21 @@ The current directory will be mounted on `/shared` on container.
 ## Usage
 
 ```
-run.sh <php-version> [container-name]
+run.sh <tag> [container-name]
 ```
 
 Or
 
 ```
-curl -L https://raw.githubusercontent.com/miya0001/wpdev/master/run.sh | bash -s <php-version> [container-name]
+curl -L https://raw.githubusercontent.com/miya0001/wpdev/master/run.sh | bash -s <tag> [container-name]
 ```
+
+| Tag | PHP Version | PHPUnit Version |
+|-----|-------------|-----------------|
+| 5.2 | 5.2.17      | 3.6             |
+| 5.3 | 5.3.29      | 4.8.36          |
+| 5.4 | 5.4.31      | 4.8.36          |
+| 5.5 | 5.5.38      | 4.8.36          |
+| 5.6 | 5.6.31      | 5.7.21          |
+| 7.0 | 7.0.23      | 6.3.0           |
+| 7.1 | 7.1.9       | 6.3.0           |
