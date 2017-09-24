@@ -71,6 +71,7 @@ $ vendor/bin/behat
 | 5.6 | 5.6.31      | 5.7.21          |
 | 7.0 | 7.0.23      | 6.3.0           |
 | 7.1 | 7.1.9       | 6.3.0           |
+| 7.2 | 7.2.0RC1    | 6.3.0           |
 
 See also:
 https://github.com/miya0001/docker-phpenv
