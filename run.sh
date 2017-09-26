@@ -26,6 +26,9 @@ docker exec $CONTAINER_NAME mysql -u root -e 'GRANT ALL PRIVILEGES ON wp_cli_tes
 
 docker exec $CONTAINER_NAME bash -c "echo \"export WP_VERSION=$WP_VERSION\" >> /home/ubuntu/.bashrc"
 
+# Install unzip
+docker exec $CONTAINER_NAME sudo apt-get -y install unzip
+
 if [ -e bin/install-wp-tests.sh ]; then
   docker exec $CONTAINER_NAME bash bin/install-wp-tests.sh wordpress_tests root 1111 localhost $WP_VERSION
 fi
